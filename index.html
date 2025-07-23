@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Sanskrit Ślokas | Wisdom Portal</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'sanskrit-gold': '#C9A227',
+                        'sanskrit-sage': '#8A9A5B',
+                        'sanskrit-earth': '#7D5A3A',
+                        'sanskrit-cream': '#F8F3E6',
+                        'sanskrit-deep': '#2A363B'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-in forwards',
+                        'slide-up': 'slideUp 0.5s ease-out forwards',
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="gay.css">
+    
+    <script src="script.js" defer></script>
+
+</head>
+<body class="bg-sanskrit-cream dark:bg-sanskrit-deep">
+    <div class="max-w-4xl mx-auto px-4 py-8 md:py-12">
+        <header class="text-center mb-10 md:mb-16 opacity-0 animate-fade-in">
+            <h1 class="text-3xl md:text-4xl font-bold text-sanskrit-deep dark:text-sanskrit-cream mb-3">Sanskrit Śloka Learning Portal</h1>
+            <p class="text-lg text-sanskrit-earth dark:text-sanskrit-sage max-w-2xl mx-auto">Discover the wisdom of ancient Sanskrit verses with authentic pronunciation and meaning</p>
+        </header>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden mb-10 md:mb-14 transition-all duration-300 transform opacity-0 animate-fade-in" style="animation-delay: 0.1s">
+            <div class="p-6 md:p-8">
+                <div class="mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-sanskrit-deep dark:text-sanskrit-cream mb-1">Bhagavad Gītā 2.22</h2>
+                    <p class="text-sanskrit-sage dark:text-sanskrit-gold italic">The Eternal Soul</p>
+                </div>
+                
+                <div class="mb-2">
+                    <div role="tablist" aria-label="Śloka presentation formats" class="flex flex-wrap border-b border-sanskrit-sage/20 pb-1">
+                        <button role="tab" aria-selected="true" aria-controls="devanagari-panel" id="devanagari-tab" class="tab-button px-4 py-2 font-medium mr-2 mb-2 text-sanskrit-deep dark:text-sanskrit-cream">
+                            Devanāgarī
+                        </button>
+                        <button role="tab" aria-selected="false" aria-controls="transliteration-panel" id="transliteration-tab" class="tab-button px-4 py-2 font-medium mr-2 mb-2 text-sanskrit-deep dark:text-sanskrit-cream">
+                            Transliteration
+                        </button>
+                        <button role="tab" aria-selected="false" aria-controls="english-panel" id="english-tab" class="tab-button px-4 py-2 font-medium mb-2 text-sanskrit-deep dark:text-sanskrit-cream">
+                            English Meaning
+                        </button>
+                    </div>
+                    
+                    <div id="devanagari-panel" role="tabpanel" aria-labelledby="devanagari-tab" class="tab-panel active py-6 min-h-[160px]">
+                        <div class="sanskrit-font text-center text-sanskrit-deep dark:text-sanskrit-cream leading-[2.5rem]">
+                            वासांसि जीर्णानि यथा विहाय<br>
+                            नवानि गृह्णाति नरोऽपराणि ।<br>
+                            तथा शरीराणि विहाय जीर्णा-<br>
+                            न्यन्यानि संयाति नवानि देही ॥
+                        </div>
+                    </div>
+                    
+                    <div id="transliteration-panel" role="tabpanel" aria-labelledby="transliteration-tab" class="tab-panel py-6 min-h-[160px] hidden">
+                        <div class="text-xl md:text-2xl italic leading-relaxed text-center text-sanskrit-deep dark:text-sanskrit-cream">
+                            vāsānsi jīrṇāni yathā vihāya<br>
+                            navāni gṛhṇāti naro'parāṇi |<br>
+                            tathā śarīrāṇi vihāya jīrṇā-<br>
+                            nyanyāni saṁyāti navāni dehī ||
+                        </div>
+                    </div>
+                    
+                    <div id="english-panel" role="tabpanel" aria-labelledby="english-tab" class="tab-panel py-6 min-h-[160px] hidden">
+                        <div class="text-lg md:text-xl leading-relaxed text-sanskrit-deep dark:text-sanskrit-cream">
+                            <p class="mb-4">Just as a person discards worn-out clothes and puts on new ones,</p>
+                            <p>likewise, the embodied soul discards worn-out bodies and enters new ones.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="sanskrit-divider"></div>
+                
+                <div class="mt-2">
+                    <h3 class="font-bold text-sanskrit-sage dark:text-sanskrit-gold mb-4 text-center">Word-by-Word Meaning</h3>
+                    <div class="flex flex-wrap gap-4 justify-center">
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">वासांसि</span><span class="tooltip-text">Clothes (vāsānsi)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">जीर्णानि</span><span class="tooltip-text">Old and worn out (jīrṇāni)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">यथा</span><span class="tooltip-text">Just as (yathā)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">विहाय</span><span class="tooltip-text">Having discarded (vihāya)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">नवानि</span><span class="tooltip-text">New ones (navāni)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">गृह्णाति</span><span class="tooltip-text">Puts on (gṛhṇāti)</span></span>
+                        <span class="word-tooltip"><span class="sanskrit-font text-lg">नरः</span><span class="tooltip-text">A person (naraḥ)</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 mb-10">
+            <div class="media-player bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 opacity-0 animate-fade-in" style="animation-delay: 0.2s">
+                <h3 class="text-xl font-bold text-sanskrit-deep dark:text-sanskrit-cream mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-sanskrit-sage dark:text-sanskrit-gold" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828a1 1 0 010-1.415z" clip-rule="evenodd" /></svg>
+                    Listen to the Śloka
+                </h3>
+                <div class="mb-4">
+                    <audio controls class="w-full" preload="none">
+                        <source src="assets/shloka-audio.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <button class="download-btn w-full py-3 text-white rounded-lg font-medium flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>
+                    Download Audio
+                </button>
+            </div>
+            
+            <div class="media-player bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 opacity-0 animate-fade-in" style="animation-delay: 0.3s">
+                <h3 class="text-xl font-bold text-sanskrit-deep dark:text-sanskrit-cream mb-4 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-sanskrit-sage dark:text-sanskrit-gold" viewBox="0 0 20 20" fill="currentColor"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" /></svg>
+                    Watch the Recitation
+                </h3>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden mb-4">
+                    <video controls class="w-full" preload="none" poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%238A9A5B'/%3E%3Cpath d='M280 140L380 180L280 220Z' fill='%23F8F3E6'/%3E%3C/svg%3E">
+                        <source src="assets/shloka-video.mp4" type="video/mp4">
+                        <track kind="captions" src="assets/shloka-captions.vtt" srclang="en" label="English" default>
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <p class="text-sm text-sanskrit-earth dark:text-sanskrit-gold italic">Includes English captions for better understanding</p>
+            </div>
+        </div>
+        
+        <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 md:p-8 opacity-0 animate-fade-in" style="animation-delay: 0.4s">
+            <h3 class="text-xl font-bold text-sanskrit-deep dark:text-sanskrit-cream mb-4">About This Śloka</h3>
+            <div class="prose max-w-none text-sanskrit-deep dark:text-sanskrit-cream">
+                <p>This profound verse from the <span class="sanskrit-highlight">Bhagavad Gītā (Chapter 2, Verse 22)</span> explains the concept of the eternal soul. It uses the analogy of changing clothes to illustrate how the soul changes bodies.</p>
+                <p class="mt-4"><span class="sanskrit-highlight">Key concepts:</span></p>
+                <ul class="list-disc pl-5 mt-2 space-y-2">
+                    <li><strong>Dehī</strong> - The embodied soul that accepts material bodies</li>
+                    <li><strong>Vihāya</strong> - Discarding or leaving behind</li>
+                    <li><strong>Jīrṇāni</strong> - Worn-out or old things</li>
+                    <li><strong>Navāni</strong> - New things</li>
+                </ul>
+                <p class="mt-4">This teaching helps us understand the eternal nature of the soul and the temporary nature of the physical body.</p>
+            </div>
+        </div>
+        
+        <div class="flex justify-center mt-8">
+            <button id="darkModeToggle" class="flex items-center text-sanskrit-earth dark:text-sanskrit-gold bg-sanskrit-cream/50 dark:bg-gray-700 px-4 py-2 rounded-full">
+                <svg id="darkModeIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" /></svg>
+                <span id="darkModeText">Dark Mode</span>
+            </button>
+        </div>
+    </div>
+    
+    <footer class="mt-auto py-6 text-center text-sanskrit-earth dark:text-sanskrit-sage text-sm border-t border-sanskrit-sage/20">
+        <div class="max-w-4xl mx-auto px-4">
+            <p>Wisdom of the Bhagavad Gītā | Sanskrit Learning Portal</p>
+            <p class="mt-1">Designed with accessibility and authenticity in mind</p>
+        </div>
+    </footer>
+</body>
+</html>

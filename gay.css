@@ -1,0 +1,133 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F3E6;
+    color: #2A363B;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sanskrit-font {
+    font-family: 'Noto Serif Devanagari', serif;
+    line-height: 1.8;
+    font-size: 1.8rem;
+}
+
+.tab-button {
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.tab-button[aria-selected="true"] {
+    color: #8A9A5B;
+    border-bottom-color: #8A9A5B;
+}
+
+.tab-button:focus-visible {
+    outline: 2px solid #C9A227;
+    outline-offset: 2px;
+}
+
+.tab-panel {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.tab-panel.active {
+    animation: fade-in 0.4s ease-in forwards, slide-up 0.5s ease-out forwards;
+}
+
+.media-player {
+    transition: all 0.4s ease;
+}
+
+.download-btn {
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #8A9A5B, #7D5A3A);
+}
+
+.download-btn:hover {
+    background: linear-gradient(to right, #7D5A3A, #6B4A2A);
+    transform: translateY(-2px);
+}
+
+.word-tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dotted #8A9A5B;
+    margin: 0 4px;
+}
+
+.word-tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: #2A363B;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px 12px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: 180px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.word-tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tab-panel, .tab-button, .media-player, .download-btn {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+.dark body {
+    background-color: #1A2328;
+    color: #E8E3D6;
+}
+
+.dark .tab-button[aria-selected="true"] {
+    color: #C9A227;
+    border-bottom-color: #C9A227;
+}
+
+.dark .card {
+    background-color: #2A363B;
+}
+
+.dark .download-btn {
+    background: linear-gradient(to right, #C9A227, #B08C1F);
+}
+
+.dark .download-btn:hover {
+    background: linear-gradient(to right, #B08C1F, #9A7819);
+}
+
+.sanskrit-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #8A9A5B, transparent);
+    margin: 24px 0;
+}
+
+.dark .sanskrit-divider {
+    background: linear-gradient(90deg, transparent, #C9A227, transparent);
+}
+
+.sanskrit-highlight {
+    color: #8A9A5B;
+    font-weight: 600;
+}
+
+.dark .sanskrit-highlight {
+    color: #C9A227;
+}
